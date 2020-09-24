@@ -5,8 +5,6 @@ import {Route} from 'react-router-dom'
 import About from './components/about'
 import Home from './components/home'
 
-// Main component handles all of the functionality of the GOL application 
-
 export default function App() {
 		return (
 			<div>

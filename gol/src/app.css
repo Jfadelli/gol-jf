@@ -1,6 +1,5 @@
 body {
   background-image: url('./static/double-bubble-dark.png');
-  
 }
   
 .box {
@@ -78,9 +77,11 @@ padding: 10px
   color: white;
   padding: 5px;
 }
+
 .about h1, h2, h3{
   padding: 15px
 }
+
 .about .list{
   display: flex;
   flex-direction: column;
@@ -108,5 +109,4 @@ padding: 10px
   font-size: 24px;
   display: flex;
   justify-content: center;
-  
 }

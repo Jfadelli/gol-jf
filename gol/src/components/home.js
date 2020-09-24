@@ -2,8 +2,7 @@ import React from 'react'
 import Buttons from './buttons'
 import Grid from './grid'
 
-
-
+// Home component handles all of the functionality of the GOL application 
 export default class Home extends React.Component {
     	// Constructor class handles the state and initial state
 	constructor() {
@@ -18,7 +17,6 @@ export default class Home extends React.Component {
 		}
 	}
 
-	
 	selectBox = (row, col) => {
 		let gridCopy = arrayClone(this.state.gridFull); // copy the array (function below)
 		gridCopy[row][col] = !gridCopy[row][col]; 		// check for differences in copied array
