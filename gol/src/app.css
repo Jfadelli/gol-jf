@@ -71,3 +71,42 @@ padding: 10px
   border: none;
   background-color: rgba(255,255,255,0);
 }
+
+.about{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 5px;
+}
+.about h1, h2, h3{
+  padding: 15px
+}
+.about .list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 10%;
+  color: lightgrey;
+  font-weight: 600;
+}
+
+.about p{
+  margin: 0 10%;
+}
+
+.bg-list ol{
+  font-size: 20px;
+}
+
+.bg-list ul{
+  margin-left: 25px;
+}
+
+.link{
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  
+}
