@@ -48,6 +48,8 @@
 ## Introction
     Conway's Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.[1] It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine. [1]
 
+    This repository contains a fully functional Javascript powered application as well as an unfinished Python file. This entire document pretains to the JS creation. I thought it could be favorable to include both versions in the repository.
+
     If you are interested in using the application that I have created, it can be found here ____. The instructions are below. 
 
     Instructions:
@@ -76,13 +78,13 @@
 ## The Assignment
     I was tasked with recreating the Game of Life (GOL) in whatever language I saw fit. So far with my education at lambda I have had experience with, HTML, CSS, Javascript, mostly in the form of React, and with Python. I elected to complete the task using React, as that is the language that I am most framiliar with. 
 
-### My Though Process
+### My Thought Process
     Initial planning lead me to outline several basic components that I would need to create in order to replicate Conway's GOL. Those components are as follows:
 1. Game board
 2. Box/Cell
 3. Selection Method
 4. Play Method
-5. Various Controls
+5. Logic Operations
 
 #### Component Design
 
@@ -97,7 +99,11 @@
     3. The Selection Method
         Per the design spec the selection method needed to buffer the existing array and my selection method follows that guidline. The function clones the array with a helper function (it uses a cool trick that leverages parse and stringify) and checks to see if they new buffered array has any changes. Once it determines that the array does have a difference, it overwrites the original "current" array.
 
-    4. Play Method
+    4. The Play Method 
+        The play method also leverages teh double buffer design. It clones the array and then applies the logical parameteres defined be the rules. Once complete, the buffered array takes the place of the current array, and the generation counter increments by 1.
+    
+    5. The Logic Operations
+        Each generation of the game is determined by applying a check to every single cell on the board. That check looks at all of the neighboring cells (eight per cell) and counts how many cells are alive or dead. If the cell has the magic number of 3 living cells, it will become alive. Otherwise the cell dies or remains dead. 
         
 
     _Sources_
