@@ -1,7 +1,6 @@
 import React from 'react'
 import { ButtonToolbar, Dropdown, DropdownButton } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-import About from './about'
 
 export default class Buttons extends React.Component {
 
